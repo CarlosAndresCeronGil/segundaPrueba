@@ -1,5 +1,43 @@
-# Object file
-*.o
+# Eclipse
+.classpath
+.project
+.settings/
+ 
+# Intellij
+.idea/
+.gradle/
+*.iml
+*.iws
+*.editorconfig
+ 
+# Gradle
+log/
+target/
+hooks/pre-push
+ 
+# Java
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+ 
+# Log file
+*.log
+.scannerwork/report-task.txt
+.scannerwork/.sonar_lock
+.scannerwork/
+ 
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+ 
+.gradle
+build/
+# Ignore Gradle GUI config
+gradle-app.setting
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+# Cache of project
+.gradletasknamecache
 
-# Ada Library Information
-*.ali
