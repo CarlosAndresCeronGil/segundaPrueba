@@ -1,19 +1,37 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
 
-group 'co.com.choucair.segundaPrueba'
 version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
+buildscript {
+    repositories {
+
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.89")
+    }
+}
+ext{
+    serenityVersion = '2.0.90'
+    serenityCucumberVersion = '1.9.49'
+}
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.assertj:assertj-core:3.12.2'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.29'
+    testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
 
-test {
-    useJUnitPlatform()
 }
+gradle.startParameter.continueOnFailure = true
