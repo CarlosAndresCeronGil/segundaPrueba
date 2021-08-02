@@ -4,7 +4,7 @@ Feature: Academy Choucair
   @scenario1
   Scenario: Register on the page
     Given than Andres wants to register on the uTest page
-    | strFirstName | strLastName | strEmail | strMonth | strDay | strYear | strLenguage |
-    | Carlos Andres | Ceron Gil  | andres@hotmail.com | January | 6 | 1998 | Spanish    |
-    When he goes to the main menu of the page
+    When he goes to the register button and start the process
+    #| strFirstName | strLastName | strEmail | strMonth | strDay | strYear | strLenguage |
+    #| Carlos Andres | Ceron Gil  | andres@hotmail.com | January | 6 | 1998 | Spanish    |
     Then he finishes the registration process

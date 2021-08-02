@@ -1,4 +1,4 @@
-package co.com.choucair.segundaPrueba.runners;
+package co.com.choucair.certification.segundaPrueba.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;

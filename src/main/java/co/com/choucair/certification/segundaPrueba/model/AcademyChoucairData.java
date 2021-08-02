@@ -1,4 +1,4 @@
-package co.com.choucair.segundaPrueba.model;
+package co.com.choucair.certification.segundaPrueba.model;
 
 public class AcademyChoucairData {
     private String strFirstName;

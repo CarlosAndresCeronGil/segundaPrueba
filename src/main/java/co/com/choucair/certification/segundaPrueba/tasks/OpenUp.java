@@ -1,8 +1,7 @@
-package co.com.choucair.segundaPrueba.tasks;
+package co.com.choucair.certification.segundaPrueba.tasks;
 
-import co.com.choucair.segundaPrueba.userinterface.UTestPage;
+import co.com.choucair.certification.segundaPrueba.userinterface.UTestPage;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
